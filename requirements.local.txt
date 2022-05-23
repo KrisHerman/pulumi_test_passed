@@ -1,0 +1,5 @@
+git+https://${PERSONAL_ACCESS_TOKEN}@github.com/televisa-univision/devops-plm-gcp-infra.git@1.30.0#egg=devops-plm-gcp-infra
+pulumi
+pulumi_gcp
+pulumi-google-native
+pydantic

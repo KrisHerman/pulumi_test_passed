@@ -1,0 +1,26 @@
+config:
+  da_kh_example_dev:general:
+    business_unit: da
+    initiative: datalake
+    platform: test
+    environment: dev
+    default_region: us-east1
+  da_kh_example_dev:service_accounts:
+    - account_id: sa-fetch-rewards-plm
+      description: Fetch Rewards Integration SA
+      display_name: sa-fetch-rewards-plm
+      role_bindings:
+        - roles/storage.admin
+        - roles/storagetransfer.user
+        - roles/bigquery.admin
+  da_kh_example_dev:buckets:
+    - name: fetch-rewards-data-inbound
+      location: us
+      uniform_bucket_level_access: True
+      labels:
+        provider: fetch_rewards
+  da_kh_example_dev:storage_transfer_fetch_rewards:
+    name: fetch-rewards-dt
+    source_bucket_name: kh_test_bkt
+    dest_bucket_name: da-datalake-test-dev-us-bkt-fetch-rewards-data-inbound
+    topic_notif: monitor-jobs-notification
