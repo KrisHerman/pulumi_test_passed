@@ -1,0 +1,52 @@
+[
+    {
+      "name": "id",
+      "type": "Integer",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "product",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "name",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "first_num",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "sec_num",
+      "type": "FLOAT",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "third_num",
+      "type": "FLOAT",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "fourth_num",
+      "type": "FLOAT",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "place",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "type",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+        "name": "fifth_num",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      }
+  ]
